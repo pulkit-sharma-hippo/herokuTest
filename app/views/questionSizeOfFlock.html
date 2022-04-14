@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Suspected affected polulation - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="questionNumberOfBirdsAffected" method="post">
+
+        
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                How many birds do you keep?
+              </h1>
+            </legend>
+            <p>Select the total number of birds that you keep.</p>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="flock-size" name="flock-size" type="radio" value="below 20 birds">
+                <label class="govuk-label govuk-radios__label" for="flock-size">
+                  Less than 20 birds 
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="flock-size-2" name="flock-size" type="radio" value="Between 21 - 100 birds">
+                <label class="govuk-label govuk-radios__label" for="flock-size-2">
+                  Between 21 to 100 birds
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="flock-size-3" name="flock-size" type="radio" value="Between 101 to 500 birds">
+                <label class="govuk-label govuk-radios__label" for="flock-size-3">
+                  Between 101 to 500 birds 
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="flock-size-3" name="flock-size" type="radio" value="Over 500 birds">
+                <label class="govuk-label govuk-radios__label" for="flock-size-3">
+                   More than 500 birds 
+                </label>
+              </div>
+            </div>
+        
+          </fieldset>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

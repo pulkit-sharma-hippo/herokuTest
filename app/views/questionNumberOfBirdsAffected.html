@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Suspected affected polulation - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="symptoms" method="post">
+
+        
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                How many birds are displaying symptoms of bird flu?
+              </h1>
+            </legend>
+            <p>Enter the number of birds that are displaying symptoms of bird flu within your flock(s).</p>
+            <div class="govuk-form-group">
+              
+              <input class="govuk-input govuk-input--width-5" id="width-5" name="width-5" type="text">
+            </div>
+          </fieldset>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Defra services - GOV.UK
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Organisations</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Defra services</a>
+      </li>
+      
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Which Defra service would you like to use?
+      </h1>
+
+        <ul class="govuk-list app-c-topic-list brand--department-for-environment-food-rural-affairs" lang="en">
+    <li class="app-c-topic-list__item">
+      <a class="govuk-link govuk-link--no-underline app-c-topic-list__link brand__color" href="https://www.gov.uk/check-if-youre-at-risk-of-flooding">Check flood warnings and river levels</a>
+    </li>
+    <li class="app-c-topic-list__item">
+      <a class="govuk-link govuk-link--no-underline app-c-topic-list__link brand__color" href="start">Report avian influenza (bird flu)</a>
+    </li>
+    <li class="app-c-topic-list__item">
+      <a class="govuk-link govuk-link--no-underline app-c-topic-list__link brand__color" href="https://www.gov.uk/topic/farming-food-grants-payments/rural-grants-payments">Apply for rural grants and make payments</a>
+    </li>
+    <li class="app-c-topic-list__item">
+      <a class="govuk-link govuk-link--no-underline app-c-topic-list__link brand__color" href="https://www.gov.uk/take-pet-abroad">Pet travel: entering/returning to the UK</a>
+    </li>
+    <li class="app-c-topic-list__item">
+      <a class="govuk-link govuk-link--no-underline app-c-topic-list__link brand__color" href="https://www.gov.uk/bringing-food-animals-plants-into-uk">Bringing food, animals, plants into UK</a>
+    </li>
+    <li class="app-c-topic-list__item">
+      <a class="govuk-link govuk-link--no-underline app-c-topic-list__link brand__color" href="https://www.gov.uk/get-your-dog-microchipped">Get your dog microchipped</a>
+    </li>
+  </ul>
+  
+  
+
+  
+  <h2 class="govuk-heading-m">More information on Defra services</h2>
+  
+  <p>
+    You can see all Defra services and information on <a class="govuk-link app-c-topic-list__link brand__color" href="/government/organisations/department-for-environment-food-rural-affairs/services-information">this page</a>
+  </p>
+    
+    
+
+  </div>
+{% endblock %}

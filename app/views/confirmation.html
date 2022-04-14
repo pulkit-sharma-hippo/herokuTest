@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Avian Influenza (bird flu) report complete</h1>
+        <div class="govuk-panel__body">
+          Your reference number<br><strong>HDJ2123F</strong>
+        </div>
+      </div>
+
+      <p>
+        We have sent a copy of the report to your email: john.citizen@example.com
+      </p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p>A veterinary professional will contact you to discuss your report in more detail.</p>
+      <p>They may need to examine the birds in person and will arrange this with you.</p>
+      <p>If you have not heard from them in the next three working days, you may call the DEFRA rural helpline on 03000 200 301</p>
+      <p><a href="https://www.gov.uk/service-manual/user-centred-design/resources/patterns/feedback-pages.html">What did you think of this service?</a> (takes 30 seconds)</p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
